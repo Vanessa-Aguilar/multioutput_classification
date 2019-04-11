@@ -36,7 +36,7 @@ from sklearn.metrics import label_ranking_average_precision_score, label_ranking
 avg_precision = label_ranking_average_precision_score(Y_test, Y_pred)
 loss = label_ranking_loss(Y_test, Y_pred)
 
-print('Average precision {0} and loss {1}'.format(avg_precision, loss))
+print('Average precision {0:.5f} and loss {1:.5f}'.format(avg_precision, loss))
 
 # Convert the prediction into a Pandas dataframe and save it as a CSV file
 Y_pred_df = pd.DataFrame(Y_pred)
